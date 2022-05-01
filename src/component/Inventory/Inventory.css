@@ -1,0 +1,16 @@
+.custom-width{
+    width: 90%;
+}
+.custom-btn{
+    padding: 10px 20px;
+    color: white;
+    background-color:#45A29E;
+    text-decoration: none;
+    border-radius: 33.33px;
+}
+.custom-btn:hover{
+    padding: 10px 20px;
+    color: #45A29E;
+    background-color:white;
+    border: 1px solid #45A29E;
+}

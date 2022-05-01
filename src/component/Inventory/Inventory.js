@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import InventoryItem from '../InventoryItem/InventoryItem';
+import './Inventory.css'
 
 const Inventory = () => {
+    const [inventories, setInventories] = useState([]);
+    useEffect(() => {
+        fetch('http://localhost:5000/inventory')
+        .then(res => res.json())
+        .then(data => setInventories(data))
+    }, [])
     return (
-        <div>
-            <h2>This is Inventory page</h2>
+        <div className='container'>
+            <h2 className='text-center'>Inventory</h2>
+           <div className="row mx-auto custom-width">
+           {
+                inventories.slice(0,6).map(inventory => <InventoryItem 
+                     inventory ={inventory}
+                     key ={inventory._id}
+                     ></InventoryItem>)
+            }
+           </div>
         </div>
     );
 };
