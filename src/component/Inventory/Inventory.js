@@ -10,7 +10,7 @@ const Inventory = () => {
         .then(data => setInventories(data))
     }, [])
     return (
-        <div className='container'>
+        <div className='container py-4'>
             <h2 className='text-center'>Inventory</h2>
            <div className="row mx-auto custom-width">
            {

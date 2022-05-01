@@ -1,11 +1,17 @@
-.color-primary{
-    color: #66FCF1 !important;
+.primary-bg{
+    background-color: #45A29E !important;
 }
 .nav-item-link a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
     margin-left: 15px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color:#45A29E !important;
+    font-size: 1.0rem;
+    font-weight: 400;
+    color:black !important;
 
 
+}
+.nav-item-link{
+    padding-top: 20px;
 }
