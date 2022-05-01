@@ -9,8 +9,12 @@
     border-radius: 33.33px;
 }
 .custom-btn:hover{
+    text-decoration: none !important;
     padding: 10px 20px;
     color: #45A29E;
     background-color:white;
     border: 1px solid #45A29E;
+}
+.white-color{
+    color: white !important;
 }

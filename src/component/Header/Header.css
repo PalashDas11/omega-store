@@ -1,3 +1,11 @@
 .color-primary{
     color: #66FCF1 !important;
 }
+.nav-item-link a{
+    margin-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color:#45A29E !important;
+
+
+}
