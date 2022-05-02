@@ -18,7 +18,7 @@ const InventoryItem = ({ inventory }) => {
                         <h6>Supplier:{supplier}</h6>
                     
                     <Card.Title className='text-danger'>${price}</Card.Title>
-                    <Link to ="/" className="d-block w-75 m-4 mx-auto text-center custom-btn">Update</Link>
+                    <Link to ="/singleInventory" className="d-block w-75 m-4 mx-auto text-center custom-btn">Update</Link>
                  
                 </Card.Body>
             </Card>

@@ -7,7 +7,7 @@ form h2{
     font-weight:  700;
 }
 
-input{
+input:not([type=checkbox]){
 	width:100%;
 	height: 50px;
     font-weight: 500;
@@ -25,7 +25,7 @@ label{
 .login-btn{
     width: 100%;
     display: block;
-    background-color:#45A29E;
+    background-color:#45A29E !important;
     color: white;
 }
 .custom-primary-bg{

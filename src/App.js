@@ -10,6 +10,9 @@ import Header from './component/Header/Header';
 import NotFound from './component/NotFound/NotFound';
 import Login from './component/Login/Login';
 import Signup from './component/Signup/Signup';
+import ResetPassword from './component/ResetPassword/ResetPassword';
+import RequireAuth from './component/RequireAuth/RequireAuth';
+import SingleInventory from './component/SingleInventory/SingleInventory';
 
 function App() {
   return (
@@ -17,10 +20,18 @@ function App() {
       <Header></Header>
      <Routes>
        <Route path ="/" element ={<Home></Home>}></Route>
+       <Route path ="/home" element ={<Home></Home>}></Route>
        <Route path = "/inventory" element = {<Inventory></Inventory>}></Route>
        <Route path = "/blog" element ={<Blog></Blog>} ></Route>
        <Route path ="/login" element ={<Login></Login>}></Route>
+       <Route path ="/singleInventory" element={
+         <RequireAuth>
+           <SingleInventory></SingleInventory>
+         </RequireAuth>
+       }></Route>
        <Route path ="/signup" element ={<Signup></Signup>}></Route>
+       <Route path ="/resetPass" element ={<ResetPassword></ResetPassword>}></Route>
+
        <Route path = "*" element = {<NotFound></NotFound>}></Route>
 
      </Routes>

@@ -8,7 +8,7 @@ import './Hero.css'
 const Hero = () => {
     return (
         <div className="banner d-flex align-items-center ps-3 ">
-            <div>
+            <div className='container'>
                 <span>EXCLUSIVE OFFER -20% OFF</span>
                 <h1>A Different kind of grocery store</h1>
                 <span>Only this week. Don't miss....</span>
