@@ -1,0 +1,39 @@
+.form-box{
+    width: 50%;
+    margin: 0px auto;
+}
+form h2{
+    font-size: 2.3rem;
+    font-weight:  700;
+}
+
+input{
+	width:100%;
+	height: 50px;
+    font-weight: 500;
+	background: #e0dede;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+
+}
+label{
+    font-weight: 500;
+}
+.login-btn{
+    width: 100%;
+    display: block;
+    background-color:#45A29E;
+    color: white;
+}
+.custom-primary-bg{
+    background-color: #45A29E !important;
+}
+
+@media screen and (max-width:578px){
+    .form-box{
+        width: 80%;
+    }
+}
