@@ -1,7 +1,7 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'react-toastify/dist/ReactToastify.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './component/Home/Home';
 import Blog from './component/Blog/Blog';
@@ -13,6 +13,7 @@ import Signup from './component/Signup/Signup';
 import ResetPassword from './component/ResetPassword/ResetPassword';
 import RequireAuth from './component/RequireAuth/RequireAuth';
 import SingleInventory from './component/SingleInventory/SingleInventory';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
        <Route path = "*" element = {<NotFound></NotFound>}></Route>
 
      </Routes>
+     <ToastContainer></ToastContainer>
     </div>
   );
 }
