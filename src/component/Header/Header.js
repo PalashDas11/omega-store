@@ -6,6 +6,8 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { signOut } from 'firebase/auth';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faManatSign, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -23,21 +25,21 @@ const Header = () => {
                 <Navbar collapseOnSelect expand="lg" sticky="top" >
                     <Container>
                         <Navbar.Brand href="#home" as={Link} to="/">
-                            <img src={logo} width='250px' alt="" />
+                            <img src={logo} width='200px' alt="" />
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
                             <Nav className="ms-auto text-center nav-items nav-item-link">
-                                <Nav.Link href="#home" as={Link} to="/">Home</Nav.Link>
-                                <Nav.Link href="#inventory" as={Link} to="/inventory">Inventory</Nav.Link>
-                                <Nav.Link href="#blog" as={Link} to="/blog">Blog</Nav.Link>
+                                <Link href="#home" to="/">Home</Link>
+                                <Link href="#inventory" to="/inventory">Inventory</Link>
+                                <Link href="#blog" to="/blog">Blog</Link>
                                 
                                 
                                 {
                                 user ? 
-                                <Link to ="/login" ><span className='custom-btn d-block text-center' onClick={handleSignOut}>Sign Out</span></Link>
+                                <Link to ="/login" ><span className='text-center' onClick={handleSignOut}> LogOut <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></span></Link>
                                 :
-                                <Link to ="/login" ><span className='custom-btn d-block text-center'>Login</span></Link>
+                                <Link to ="/login" ><span className='text-center'>Login <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></span></Link>
                             }
 
 

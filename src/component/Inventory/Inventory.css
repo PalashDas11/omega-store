@@ -2,12 +2,18 @@
     width: 90%;
 }
 .custom-btn{
-    padding: 9px 20px;
+    padding: 10px 20px;
+   
+    font-size: 1.1rem;
     color: white;
     background-color:#45A29E;
     text-decoration: none;
     border-radius: 33.33px;
     transition: .5s;
+}
+.custom-btn .icon {
+   
+    
 }
 .custom-btn:hover{
     text-decoration: none !important;
