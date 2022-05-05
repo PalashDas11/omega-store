@@ -14,6 +14,7 @@ import ResetPassword from './component/ResetPassword/ResetPassword';
 import RequireAuth from './component/RequireAuth/RequireAuth';
 import SingleInventory from './component/SingleInventory/SingleInventory';
 import { ToastContainer } from 'react-toastify';
+import ManageInventories from './component/ManageInventories/ManageInventories';
 
 function App() {
   return (
@@ -30,11 +31,12 @@ function App() {
        <SingleInventory></SingleInventory>
        </RequireAuth>
        }></Route>
+       <Route path="/manageItems" element ={<ManageInventories></ManageInventories>}></Route>
        <Route path ="/signup" element ={<Signup></Signup>}></Route>
        <Route path ="/resetPass" element ={<ResetPassword></ResetPassword>}></Route>
 
        <Route path = "*" element = {<NotFound></NotFound>}></Route>
-
+ 
      </Routes>
      <ToastContainer></ToastContainer>
     </div>

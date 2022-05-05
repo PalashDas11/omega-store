@@ -34,7 +34,7 @@ const SingleInventory = () => {
                 </div>
             </div>
             <div className="pt-4 text-center">
-                <Link to="/manageAll" className="custom-btn">Manage All Items{` >>`}</Link>
+                <Link to="/manageItems" className="custom-btn2">Manage All Items{` >>`}</Link>
     
             </div>
         </div>

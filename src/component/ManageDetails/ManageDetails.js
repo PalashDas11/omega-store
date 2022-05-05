@@ -1,18 +1,10 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
 
-const InventoryItem = ({ inventory }) => {
-    const { _id, name, img, price, description, supplier, quantity } = inventory
-
-    console.log(_id);
-    const navigate = useNavigate();
-    const navigateId = id => {
-        navigate(`/InventoryItem/${id}`)
-    }
-   
+const ManageDetails = ({manageItem}) => {
+    const { _id, name, img, price, description, supplier, quantity } = manageItem;
     return (
-        <div className='col-sm-12  col-md-4 g-3 '>
+        <div className='col-sm-12  col-md-6 g-3 '>
             <Card style={{ width: '100%', height:'100%' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
@@ -25,7 +17,7 @@ const InventoryItem = ({ inventory }) => {
                         <h6>Quantity:{quantity}</h6>
                     
                     <Card.Title className='text-danger'>${price}</Card.Title>
-                    <button className="d-block w-75 m-4 mx-auto text-center custom-btn" onClick={() => navigateId(_id)}>Update</button>
+                    <button className="d-block w-75 m-4 mx-auto text-center custom-btn">Delete</button>
                  
                 </Card.Body>
             </Card>
@@ -33,4 +25,4 @@ const InventoryItem = ({ inventory }) => {
     );
 };
 
-export default InventoryItem;
+export default ManageDetails;
