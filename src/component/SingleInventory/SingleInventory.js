@@ -1,21 +1,42 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 const SingleInventory = () => {
-    const {inventoryId} = useParams();
+    const { inventoryId } = useParams();
     console.log(inventoryId);
-    const [singleInventory, setSingleInventory] =useState({})
-    useEffect( () => {
-        const url =`http://localhost:5000/InventoryItem/${inventoryId}`
+    const [singleInventory, setSingleInventory] = useState({})
+    useEffect(() => {
+        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
         console.log(url);
         fetch(url)
-        .then(res => res.json())
-        .then(data => setSingleInventory(data))
+            .then(res => res.json())
+            .then(data => setSingleInventory(data))
     }, [])
     return (
-        <div>
-            <h2>this is single items page:{singleInventory.name}</h2>
-            
+        <div className="container">
+            <div className=" row align-items-center">
+                <div className="col-sm-12 col-md-6 col-lg-4">
+                    <img src={singleInventory.img} alt="" />
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-8">
+                    <h2 className="text-danger">${singleInventory.price}</h2>
+                    <h5>Name: {singleInventory.name}</h5>
+                    <p>{singleInventory.description}</p>
+                    <p>Supplier: {singleInventory.supplier}</p>
+                    <p>Quantity: {singleInventory.quantity}</p>
+
+                    <input type="text" className="w-75" />
+                    <button className='custom-btn'>Add Quantity</button>
+                    <div>
+                        <button className='custom-btn mt-2'>Delivered</button>
+
+                    </div>
+                </div>
+            </div>
+            <div className="pt-4 text-center">
+                <Link to="/manageAll" className="custom-btn">Manage All Items{` >>`}</Link>
+    
+            </div>
         </div>
     );
 };

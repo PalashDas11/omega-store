@@ -14,7 +14,7 @@ const Inventory = () => {
             <h2 className='text-center'>Inventory</h2>
            <div className="row mx-auto custom-width">
            {
-                inventories.slice(0,6).map(inventory => <InventoryItem 
+                inventories.map(inventory => <InventoryItem 
                      inventory ={inventory}
                      key ={inventory._id}
                      ></InventoryItem>)

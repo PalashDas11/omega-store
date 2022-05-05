@@ -9,12 +9,11 @@
     background-color:#45A29E;
     text-decoration: none;
     border-radius: 33.33px;
-    transition: .5s;
+    transition: .3s;
+    outline: none;
+    border :none;
 }
-.custom-btn .icon {
-   
-    
-}
+
 .custom-btn:hover{
     text-decoration: none !important;
     padding: 10px 20px;
