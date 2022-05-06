@@ -6,14 +6,14 @@ const SingleInventory = () => {
     console.log(inventoryId);
     const [singleInventory, setSingleInventory] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
+        const url = `https://serene-oasis-27918.herokuapp.com/InventoryItem/${inventoryId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())
             .then(data => setSingleInventory(data))
     }, [])
     return (
-        <div className="container">
+        <div className="container vh-100">
             <div className=" row align-items-center">
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <img src={singleInventory.img} alt="" />
