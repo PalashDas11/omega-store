@@ -6,7 +6,7 @@
    
     font-size: 1.1rem;
     color: white;
-    background-color:#45A29E;
+    background-color:#45A29E !important;
     text-decoration: none;
     border-radius: 33.33px;
     transition: .3s;
@@ -17,9 +17,9 @@
 .custom-btn:hover{
     text-decoration: none !important;
     padding: 10px 20px;
-    color: #45A29E;
-    background-color:white;
-    border: 1px solid #45A29E;
+    color: #45A29E !important;
+    background-color:white !important;
+    border: 1px solid #45A29E !important;
 }
 .custom-btn2{
     padding: 10px 20px;

@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const ManageDetails = ({manageItem}) => {
     const { _id, name, img, price, description, supplier, quantity } = manageItem;
     return (
-        <div className='col-sm-12  col-md-6 g-3 '>
+        <div className='col-sm-12  col-md-4 g-3 '>
             <Card style={{ width: '100%', height:'100%' }}>
                 <Card.Img variant="top" src={img} />
                 <Card.Body>

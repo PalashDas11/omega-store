@@ -33,11 +33,18 @@ const Header = () => {
                                 <Link href="#home" to="/">Home</Link>
                                 <Link href="#inventory" to="/inventory">Inventory</Link>
                                 <Link href="#blog" to="/blog">Blog</Link>
+                                {
+                                    user && <>
+                                    <Link to ="/addItem">Add Inventory</Link>
+                                     <Link to ="/manageItems">Manage Items</Link>
+                                    </>
+                                }
                                 
                                 
                                 {
                                 user ? 
                                 <Link to ="/login" ><span className='text-center' onClick={handleSignOut}> LogOut <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></span></Link>
+
                                 :
                                 <Link to ="/login" ><span className='text-center'>Login <FontAwesomeIcon icon={faUser}></FontAwesomeIcon></span></Link>
                             }
