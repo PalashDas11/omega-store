@@ -1,8 +1,9 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 
 const AddInventory = () => {
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const { register, handleSubmit} = useForm();
     const onSubmit = data => {
         console.log(data);
        const url = `http://localhost:5000/inventory`;
@@ -14,10 +15,11 @@ const AddInventory = () => {
            body: JSON.stringify(data)
        })
        .then(res => res.json())
-       .then(result => console.log(result))
+       .then(result => toast('Add item sucessfully'))
     };
     return (
-        <div className="container">
+        <div className="container py-4">
+            <h2 className="text-center">Add Inventory item </h2>
             <form className=" w-50 mx-auto" onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder="Name" {...register("name", { required: true, maxLength: 20 })} />
                 <input placeholder="Description" {...register("description")} />
