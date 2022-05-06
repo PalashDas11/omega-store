@@ -27,10 +27,9 @@
     padding-left: 10px;
     
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width:576px){
     .banner {
-         width: 100%;
-        
+         max-width: 100%;
          position: relative;
     
     }
@@ -42,9 +41,8 @@
     }
     .banner-content{
         position: absolute;
-        max-width: 80%;
-       
-         
+        max-width:100%;
+        
         top: 0%;
         left: 0%;
         
@@ -71,11 +69,10 @@
         
     }
 }
-@media screen and (min-width: 577px){
+@media screen and (min-width:577px){
     .banner {
          width: 100%;
-         display: flex;
-         align-items: center;
+         
          position: relative;
     
     }
@@ -86,7 +83,7 @@
     }
     .banner-content{
         position: absolute;
-        max-width: 50%;
+        max-width: 100%;
         top: 20%;
         left: 5%;
         
@@ -106,6 +103,38 @@
         padding: 8px 16px;
         font-size: 1rem;
 
+    }
+    .icon{
+        padding-left: 10px;
+        
+    }
+}
+@media screen and (min-width:992px){
+    .banner {
+        width: 100%;
+        position: relative;
+     
+    
+    }
+    
+    .banner img{
+     max-width: 100%;
+    }
+    .banner-content{
+        
+        position: absolute;
+        max-width: 100%;
+        top: 33%;
+        left: 5%;
+    
+    }
+    .banner h1{
+        font-size: 3rem;
+        margin:10px 0px;
+    }
+    .banner p, span{
+        font-size: 1rem;
+        margin-bottom: 30px;
     }
     .icon{
         padding-left: 10px;

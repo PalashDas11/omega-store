@@ -1,5 +1,4 @@
-import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
-import { faArrowRightArrowLeft, faCoffee, faRightLong, } from '@fortawesome/free-solid-svg-icons';
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css'
@@ -10,9 +9,9 @@ import banner from '../../img/banner.jpg'
 const Hero = () => {
     return (
         <div className="banner">
-            <img src={banner} alt="" srcset="" />
+            <img src={banner} alt="" />
 
-            <div className='banner-content-wrap'>
+            
                 <div className='container banner-content'>
                     <span>EXCLUSIVE OFFER -20% OFF</span>
                     <h1>A Different kind of grocery store</h1>
@@ -25,7 +24,7 @@ const Hero = () => {
                     </Link>
 
                 </div>
-            </div>
+   
 
         </div>
     );
