@@ -3,23 +3,28 @@ import { faArrowRightArrowLeft, faCoffee, faRightLong, } from '@fortawesome/free
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Hero.css'
+import banner from '../../img/banner.jpg'
 
 
 
 const Hero = () => {
     return (
-        <div className="banner d-flex align-items-center ps-3 ">
-            <div className='container'>
-                <span>EXCLUSIVE OFFER -20% OFF</span>
-                <h1>A Different kind of grocery store</h1>
-                <span>Only this week. Don't miss....</span>
-                <p>from <span className="text-danger h3">$7.99</span></p>
+        <div className="banner">
+            <img src={banner} alt="" srcset="" />
+
+            <div className='banner-content-wrap'>
+                <div className='container banner-content'>
+                    <span>EXCLUSIVE OFFER -20% OFF</span>
+                    <h1>A Different kind of grocery store</h1>
+                    <span>Only this week. Don't miss....</span>
+                    <p>from <span className="text-danger h3">$7.99</span></p>
+
+                    <Link to="/inventory" className="custom-btn ">
+                        Shop now
             
-                    <Link to="/" className="custom-btn "> 
-                     <span className='pe-3'>Shop now</span> 
-                     <FontAwesomeIcon className='icon' icon={faRightLong}></FontAwesomeIcon>
                     </Link>
-                
+
+                </div>
             </div>
 
         </div>
