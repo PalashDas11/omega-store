@@ -1,10 +1,18 @@
-# Getting Started with Create React App
+# Omega Grocery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website live link [Omega Grocery](https://github.com/facebook/create-react-app).
+
+# description 
+ Omega Grocery is a grocety store. Here you can find fresh products and often, bakery goos alongside canned, frozen and prepared foods. It's specialize in the selling of food, both fresh and prepackaged. Buy you best products from here.
 
 ## Available Scripts
+All Feature on this website:
+- It is a Grocery store.
+- Using bootstrap framwork.
+- This site has Firebase Authentication system. if You're login than you buy product
+- Implement jwt token for email/password based authentication.
+- Using manage items, if you're login than you added new inventory item and delete your inventory item.
 
-In the project directory, you can run:
 
 ### `npm start`
 
