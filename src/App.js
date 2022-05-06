@@ -16,6 +16,7 @@ import SingleInventory from './component/SingleInventory/SingleInventory';
 import { ToastContainer } from 'react-toastify';
 import ManageInventories from './component/ManageInventories/ManageInventories';
 import AddInventory from './component/AddInventory/AddInventory';
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
  
      </Routes>
      <ToastContainer></ToastContainer>
+     <Footer></Footer>
     </div>
   );
 }

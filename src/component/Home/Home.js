@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <Inventory></Inventory>
-            <h2>this is home page</h2>
+            
         </div>
     );
 };
