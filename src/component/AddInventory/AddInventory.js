@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import './AddInventory.css'
 
 const AddInventory = () => {
     const { register, handleSubmit} = useForm();
@@ -20,7 +21,7 @@ const AddInventory = () => {
     return (
         <div className="container py-4">
             <h2 className="text-center">Add Inventory item </h2>
-            <form className=" w-50 mx-auto" onSubmit={handleSubmit(onSubmit)}>
+            <form className="custom-form" onSubmit={handleSubmit(onSubmit)}>
                 <input placeholder="Name" {...register("name", { required: true, maxLength: 20 })} />
                 <input placeholder="Description" {...register("description")} />
                 <input placeholder="Price" type="number" {...register("price")} />
