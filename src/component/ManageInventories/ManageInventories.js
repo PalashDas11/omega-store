@@ -5,14 +5,14 @@ import ManageDetails from '../ManageDetails/ManageDetails';
 const ManageInventories = () => {
     const [manageItems, setManageItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/manageItems')
+        fetch('https://serene-oasis-27918.herokuapp.com/manageItems')
             .then(res => res.json())
             .then(data => setManageItems(data))
     }, [])
     const handleDelete = id => {
         const confirm = window.confirm("Are you sure want to delete?");
         if(confirm){
-          const url = `http://localhost:5000/InventoryItem/${id}`
+          const url = `https://serene-oasis-27918.herokuapp.com/InventoryItem/${id}`
           fetch(url, {
               method:'DELETE'
           })
