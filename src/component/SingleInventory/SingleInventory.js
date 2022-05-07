@@ -6,7 +6,7 @@ const SingleInventory = () => {
     console.log(inventoryId);
     const [singleInventory, setSingleInventory] = useState({})
     useEffect(() => {
-        const url = `https://serene-oasis-27918.herokuapp.com/InventoryItem/${inventoryId}`
+        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())
