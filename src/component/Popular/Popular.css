@@ -1,0 +1,14 @@
+.popular-items{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  
+}
+.popular-items img{
+    width: 250px;
+}
+.popular-items .custom-btn{
+    padding: 8px 20px;
+    font-size: .9rem;
+    font-weight: 500;
+}

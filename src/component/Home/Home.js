@@ -1,6 +1,7 @@
 import React from 'react';
 import Hero from '../Hero/Hero';
 import Inventory from '../Inventory/Inventory';
+import Popular from '../Popular/Popular';
 
 const Home = () => {
     return (
@@ -8,6 +9,7 @@ const Home = () => {
         <div>
             <Hero></Hero>
             <Inventory></Inventory>
+            <Popular></Popular>
             
         </div>
     );
