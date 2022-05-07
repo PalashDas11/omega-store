@@ -36,6 +36,54 @@ const Popular = () => {
                     </div>
                 </div>
             </div>
+            {/* another on  */}
+            <div className="row  mx-auto py-4">
+                <div className="d-flex align-items-center justify-content-around col-sm-12 col-md-4 col-lg-3">
+                    <div>
+                        <img src="https://htmldemo.net/fulo/fulo/assets/img/icons/f1.webp" alt="" />
+                    </div>
+                    <div className="ps-2">
+                        <h5>FREE SHIPPING</h5>
+                        <p>On all orders over $75.00</p>
+                    </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-around  col-sm-12 col-md-4 col-lg-3">
+                    <div>
+                        <img src="https://htmldemo.net/fulo/fulo/assets/img/icons/f2.webp" alt="" />
+                    </div>
+                    <div className="ps-2">
+                        <h5>EASY 30 DAYS RETURNS
+                        </h5>
+                        <p>30 days money back
+
+                        </p>
+                    </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-around  col-sm-12 col-md-4 col-lg-3">
+                    <div>
+                        <img src="	https://htmldemo.net/fulo/fulo/assets/img/icons/f3.webp" alt="" />
+                    </div>
+                    <div className="ps-2">
+                        <h5>100% PAYMENT SECURE</h5>
+                        <p>PayPal / MasterCard / Visa
+
+                        </p>
+                    </div>
+                </div>
+                <div className="d-flex align-items-center justify-content-around  col-sm-12 col-md-4 col-lg-3">
+                    <div>
+                        <img src="https://htmldemo.net/fulo/fulo/assets/img/icons/f4.webp" alt="" />
+                    </div>
+                    <div className="ps-2">
+                        <h5>24/7 SUPPORT
+                        </h5>
+                        <p>We will be at your service
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
     );
 };
