@@ -28,6 +28,7 @@ const SingleInventory = () => {
   const deliverdIncrease = () => {
       
     const inputValue = parseFloat(document.getElementById("increse").value);
+    
 
     fetch(`http://localhost:5000/singleItems/${inventoryId}`, {
         method:'PUT',
