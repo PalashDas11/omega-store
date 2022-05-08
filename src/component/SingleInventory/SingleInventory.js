@@ -1,10 +1,52 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const SingleInventory = () => {
     const { inventoryId } = useParams();
     console.log(inventoryId);
     const [singleInventory, setSingleInventory] = useState({})
+
+ 
+
+      const deliverd=()=>{
+
+        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
+        
+        fetch(url, {
+            method: 'PUT', 
+            headers: {
+                'content-type':'application/json'
+            },
+            body: JSON.stringify(singleInventory)
+        })
+        .then(res => res.json())
+        .then(result => setSingleInventory(result))
+            
+      }
+
+  const deliverdIncrease = () => {
+      
+    const inputValue = parseFloat(document.getElementById("increse").value);
+
+    fetch(`http://localhost:5000/singleItems/${inventoryId}`, {
+        method:'PUT',
+        headers:{
+            'content-Type': 'application/json'
+        },
+        body:`{"amount":${inputValue || 2}}`
+    })
+    .then(res => res.json())
+    .then(data => {
+        setSingleInventory(data)
+            
+    })
+  }
+
+
+
+
+
     useEffect(() => {
         const url = `http://localhost:5000/InventoryItem/${inventoryId}`
         console.log(url);
@@ -13,7 +55,7 @@ const SingleInventory = () => {
             .then(data => setSingleInventory(data))
     }, [])
     return (
-        <div className="container vh-100">
+        <div className="container py-4 vh-100">
             <div className=" row align-items-center">
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <img src={singleInventory.img} alt="" />
@@ -25,10 +67,10 @@ const SingleInventory = () => {
                     <p>Supplier: {singleInventory.supplier}</p>
                     <p>Quantity: {singleInventory.quantity}</p>
 
-                    <input type="text" className="w-75" />
-                    <button className='custom-btn'>Add Quantity</button>
+                    <input type="text"  id="increse"  className="w-75" />
+                    <button className='custom-btn' onClick={deliverdIncrease} >Add Quantity</button>
                     <div>
-                        <button className='custom-btn mt-2'>Delivered</button>
+                        <button className='custom-btn mt-2' onClick={deliverd}>Delivered</button>
 
                     </div>
                 </div>
