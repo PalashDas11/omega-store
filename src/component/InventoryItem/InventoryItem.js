@@ -4,8 +4,6 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const InventoryItem = ({ inventory }) => {
     const { _id, name, img, price, description, supplier, quantity } = inventory
-
-    console.log(_id);
     const navigate = useNavigate();
     const navigateId = id => {
         navigate(`/InventoryItem/${id}`)

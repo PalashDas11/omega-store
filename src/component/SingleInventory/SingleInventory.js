@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const SingleInventory = () => {
     const { inventoryId } = useParams();
-    console.log(inventoryId);
+    
     const [singleInventory, setSingleInventory] = useState({})
 
  
@@ -50,13 +50,12 @@ const SingleInventory = () => {
 
     useEffect(() => {
         const url = `https://blooming-eyrie-17449.herokuapp.com/InventoryItem/${inventoryId}`
-        console.log(url);
         fetch(url)
             .then(res => res.json())
             .then(data => setSingleInventory(data))
     }, [])
     return (
-        <div className="container py-4 vh-100">
+        <div className="container py-4 ">
             <div className=" row align-items-center">
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <img src={singleInventory.img} alt="" />
