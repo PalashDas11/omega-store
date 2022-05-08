@@ -6,7 +6,7 @@ import './Inventory.css'
 const Inventory = () => {
     const [inventories, setInventories] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/inventory')
+        fetch('https://blooming-eyrie-17449.herokuapp.com/inventory')
         .then(res => res.json())
         .then(data => setInventories(data))
     }, [])

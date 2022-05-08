@@ -22,10 +22,12 @@ const Header = () => {
             <>
                
 
-                <Navbar collapseOnSelect expand="lg" sticky="top" >
+                <Navbar collapseOnSelect expand="lg" sticky="top" className="custom-header" >
                     <Container>
                         <Navbar.Brand href="#home" as={Link} to="/">
-                            <img src={logo} width='200px' alt="" />
+                           <div className="d-flex align-items-center">
+                           <img src={logo}  alt="" />
+                           </div>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">

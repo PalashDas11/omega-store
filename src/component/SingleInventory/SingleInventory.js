@@ -11,7 +11,7 @@ const SingleInventory = () => {
 
       const deliverd=()=>{
 
-        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
+        const url = `https://blooming-eyrie-17449.herokuapp.com/InventoryItem/${inventoryId}`
         
         fetch(url, {
             method: 'PUT', 
@@ -30,7 +30,7 @@ const SingleInventory = () => {
     const inputValue = parseFloat(document.getElementById("increse").value);
     
 
-    fetch(`http://localhost:5000/singleItems/${inventoryId}`, {
+    fetch(`https://blooming-eyrie-17449.herokuapp.com/singleItems/${inventoryId}`, {
         method:'PUT',
         headers:{
             'content-Type': 'application/json'
@@ -49,7 +49,7 @@ const SingleInventory = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/InventoryItem/${inventoryId}`
+        const url = `https://blooming-eyrie-17449.herokuapp.com/InventoryItem/${inventoryId}`
         console.log(url);
         fetch(url)
             .then(res => res.json())

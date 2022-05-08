@@ -1,17 +1,27 @@
 .primary-bg{
     background-color: #45A29E !important;
 }
+
+.custom-header{
+    background-color: #f3f3f3;
+}
+
+.custom-header img{
+    width: 250px;
+    
+
+}
 .nav-item-link a{
     
     text-decoration: none;
-    text-transform: uppercase;
+    
     margin-left: 15px;
-    font-size: 1.0rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     color:black !important;
 
 
 }
 .nav-item-link{
-    padding-top: 20px;
+    
 }

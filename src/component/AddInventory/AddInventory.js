@@ -7,7 +7,7 @@ const AddInventory = () => {
     const { register, handleSubmit} = useForm();
     const onSubmit = data => {
         console.log(data);
-       const url = `http://localhost:5000/inventory`;
+       const url = `https://blooming-eyrie-17449.herokuapp.com/inventory`;
        fetch(url, {
            method: 'POST', 
            headers: {

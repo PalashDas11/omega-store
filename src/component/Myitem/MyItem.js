@@ -12,7 +12,7 @@ const MyItem = () => {
     const [myItems, setMyItems] = useState([]);
     useEffect(() => {
             
-            const url = `http://localhost:5000/myItem`
+            const url = `https://blooming-eyrie-17449.herokuapp.com/myItem`
             fetch(url)
                 .then(res => res.json())
                 .then(data => setMyItems(data))
