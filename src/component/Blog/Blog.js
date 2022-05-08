@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='container'>
+        <div className='container py-4'>
             <div>
                 <h3>What is the Difference between JavaScript and Nodejs?</h3>
                 <p>Ans: Javascript is a Scripting language. it's a high level programming language. Javascript is a programming language that is used for writing scripts on the website and it's only run on browser. It's used on frontend devolopmet. <br />

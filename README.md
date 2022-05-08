@@ -1,6 +1,6 @@
 # Omega Grocery
 
-Website live link [Omega Grocery](https://github.com/facebook/create-react-app).
+Website live link [Omega Grocery](https://omega-grocery.web.app/).
 
 # description 
  Omega Grocery is a grocety store. Here you can find fresh products and often, bakery goos alongside canned, frozen and prepared foods. It's specialize in the selling of food, both fresh and prepackaged. Buy you best products from here.
